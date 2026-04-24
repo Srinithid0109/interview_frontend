@@ -16,7 +16,7 @@ function DashboardPage() {
     async function fetchStats() {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/results/stats/${storedUser.id}`
+          `https://interview-backend-jscm.onrender.com/api/results/stats/${storedUser.id}`
         )
         const data = await response.json()
         setStats({
@@ -32,7 +32,7 @@ function DashboardPage() {
     async function fetchRecent() {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/results/${storedUser.id}`
+          `https://interview-backend-jscm.onrender.com/api/results/${storedUser.id}`
         )
         const data = await response.json()
         setRecentResults(data.results.slice(0, 5))

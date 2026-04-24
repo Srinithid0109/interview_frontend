@@ -27,7 +27,7 @@ function ResultsPage() {
       : 0
 
     try {
-      await fetch('http://localhost:5000/api/results/save', {
+      await fetch('https://interview-backend-jscm.onrender.com/api/results/save', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
