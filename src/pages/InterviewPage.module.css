@@ -1,0 +1,373 @@
+/* Shared */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f0f4ff;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0d0d1a;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b6b8a;
+  text-align: center;
+  margin-top: -8px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0d0d1a;
+}
+
+.select {
+  padding: 12px 16px;
+  border: 1.5px solid #e0e0f0;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  background: white;
+}
+
+.select:focus { border-color: #6c63ff; }
+
+.questionOptions {
+  display: flex;
+  gap: 12px;
+}
+
+.questionOption {
+  flex: 1;
+  border: 2px solid #e0e0f0;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.questionOption:hover { border-color: #6c63ff; }
+
+.selected {
+  border-color: #6c63ff;
+  background: #f0eeff;
+}
+
+.optionNumber {
+  font-size: 24px;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+.optionLabel {
+  font-size: 12px;
+  color: #6b6b8a;
+  margin-top: 4px;
+}
+
+.button {
+  padding: 13px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+
+.button:hover { background: #574fd6; }
+
+.back {
+  text-align: center;
+  font-size: 14px;
+  color: #6b6b8a;
+  cursor: pointer;
+}
+
+.back:hover { color: #6c63ff; }
+
+.error {
+  color: #e94560;
+  font-size: 13px;
+  background: #fdeef1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Interview Stage */
+.interviewContainer {
+  min-height: 100vh;
+  background: #f0f4ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  background: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+
+.roleTag {
+  font-size: 15px;
+  font-weight: 600;
+  color: #6c63ff;
+}
+
+.questionCounter {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b6b8a;
+}
+
+.progressBar {
+  width: 100%;
+  height: 4px;
+  background: #e0e0f0;
+}
+
+.progressFill {
+  height: 100%;
+  background: #6c63ff;
+  transition: width 0.5s ease;
+}
+
+.interviewContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.questionCard {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+.questionNumber {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c63ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.questionText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0d0d1a;
+  line-height: 1.5;
+}
+
+.voiceSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.micCircle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f0eeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.micCircleActive {
+  background: #fdeef1;
+}
+
+.micIcon {
+  font-size: 36px;
+  z-index: 1;
+}
+
+.ripple {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #e94560;
+  animation: rippleAnim 1.2s infinite;
+}
+
+.ripple2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #e94560;
+  animation: rippleAnim 1.2s infinite 0.4s;
+}
+
+@keyframes rippleAnim {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+.voiceStatus {
+  font-size: 14px;
+  color: #6b6b8a;
+  text-align: center;
+}
+
+.voiceButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.micButton {
+  padding: 12px 28px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.micButton:hover { background: #574fd6; }
+
+.stopButton {
+  padding: 12px 28px;
+  background: #e94560;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.stopButton:hover { background: #c73652; }
+
+.transcriptBox {
+  background: #f8f8fc;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1.5px solid #e0e0f0;
+  width: 100%;
+}
+
+.transcriptLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b6b8a;
+  margin-bottom: 6px;
+}
+
+.transcriptText {
+  font-size: 15px;
+  color: #0d0d1a;
+  line-height: 1.5;
+}
+
+.reRecord {
+  font-size: 13px;
+  color: #6c63ff;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.reRecord:hover { text-decoration: underline; }
+
+.nextButton {
+  padding: 14px 40px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.nextButton:hover { background: #574fd6; }
+
+.nextDisabled {
+  background: #c0bce8;
+  cursor: not-allowed;
+}
+
+.nextDisabled:hover { background: #c0bce8; }
+
+/* Results */
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resultCard {
+  background: #f8f8fc;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1.5px solid #e0e0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.resultQuestion {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0d0d1a;
+}
+
+.resultAnswer {
+  font-size: 14px;
+  color: #6b6b8a;
+  line-height: 1.5;
+}

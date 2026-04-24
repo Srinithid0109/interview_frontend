@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f0f4ff;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0d0d1a;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b6b8a;
+  text-align: center;
+  margin-top: -8px;
+  line-height: 1.5;
+}
+
+.dropZone {
+  border: 2px dashed #c0c0e0;
+  border-radius: 14px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #fafafa;
+}
+
+.dropZone:hover {
+  border-color: #6c63ff;
+  background: #f0eeff;
+}
+
+.dragging {
+  border-color: #6c63ff;
+  background: #f0eeff;
+  transform: scale(1.02);
+}
+
+.uploaded {
+  border-color: #00b894;
+  background: #e8faf6;
+  border-style: solid;
+}
+
+.dropIcon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.dropMain {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0d0d1a;
+  margin-bottom: 6px;
+}
+
+.dropSub {
+  font-size: 14px;
+  color: #6b6b8a;
+}
+
+.dropFormat {
+  font-size: 12px;
+  color: #a0a0b8;
+  margin-top: 8px;
+}
+
+.fileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.fileIcon {
+  font-size: 40px;
+}
+
+.fileName {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0d0d1a;
+}
+
+.fileSize {
+  font-size: 13px;
+  color: #6b6b8a;
+}
+
+.changeFile {
+  text-align: center;
+  font-size: 13px;
+  color: #6c63ff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.changeFile:hover {
+  text-decoration: underline;
+}
+
+.button {
+  padding: 13px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #574fd6;
+}
+
+.buttonDisabled {
+  background: #c0c0e0;
+  cursor: not-allowed;
+}
+
+.buttonDisabled:hover {
+  background: #c0c0e0;
+}
+
+.back {
+  text-align: center;
+  font-size: 14px;
+  color: #6b6b8a;
+  cursor: pointer;
+}
+
+.back:hover {
+  color: #6c63ff;
+}
+
+.error {
+  color: #e94560;
+  font-size: 13px;
+  background: #fdeef1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-align: center;
+}

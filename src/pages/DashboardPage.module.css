@@ -1,0 +1,129 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.welcome {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0d0d1a;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b6b8a;
+  margin-top: 4px;
+}
+
+.startButton {
+  padding: 12px 24px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.startButton:hover {
+  background: #574fd6;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.statCard {
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 36px;
+  font-weight: 700;
+  color: #6c63ff;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: #6b6b8a;
+  margin-top: 6px;
+}
+
+.recentSection {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d0d1a;
+  margin-bottom: 16px;
+}
+
+.interviewCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f8;
+}
+
+.interviewCard:last-child {
+  border-bottom: none;
+}
+
+.role {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0d0d1a;
+}
+
+.date {
+  font-size: 13px;
+  color: #6b6b8a;
+  margin-top: 2px;
+}
+
+.scoreBadge {
+  background: #f0eeff;
+  color: #6c63ff;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+.logoutButton {
+  padding: 12px 24px;
+  background: white;
+  color: #e94560;
+  border: 2px solid #e94560;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logoutButton:hover {
+  background: #fdeef1;
+}

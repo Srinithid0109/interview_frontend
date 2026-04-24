@@ -1,0 +1,225 @@
+.container {
+  min-height: 100vh;
+  background: #f0f4ff;
+  padding: 40px 20px;
+}
+
+.inner {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d0d1a;
+}
+
+.role {
+  font-size: 15px;
+  color: #6b6b8a;
+  margin-top: 6px;
+}
+
+.overallCard {
+  background: linear-gradient(135deg, #6c63ff, #574fd6);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  color: white;
+}
+
+.overallLabel {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.overallScore {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.overallStars {
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+.overallMessage {
+  font-size: 15px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d0d1a;
+  margin-bottom: 4px;
+}
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.resultCard {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.questionRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.questionNumber {
+  background: #f0eeff;
+  color: #6c63ff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.questionText {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0d0d1a;
+  line-height: 1.4;
+}
+
+.answerBox {
+  background: #f8f8fc;
+  border-radius: 10px;
+  padding: 12px 16px;
+  border-left: 3px solid #6c63ff;
+}
+
+.answerLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b6b8a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.answerText {
+  font-size: 14px;
+  color: #0d0d1a;
+  line-height: 1.5;
+}
+
+.scoreRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scoreEmoji {
+  font-size: 16px;
+}
+
+.scoreBadge {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.scoreGreen {
+  background: #e8faf6;
+  color: #00b894;
+}
+
+.scoreYellow {
+  background: #fef9ee;
+  color: #f5a623;
+}
+
+.scoreRed {
+  background: #fdeef1;
+  color: #e94560;
+}
+
+.scoreLabel {
+  font-size: 13px;
+  color: #6b6b8a;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.tryAgainButton {
+  flex: 1;
+  padding: 13px;
+  background: white;
+  color: #6c63ff;
+  border: 2px solid #6c63ff;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tryAgainButton:hover {
+  background: #f0eeff;
+}
+
+.dashboardButton {
+  flex: 1;
+  padding: 13px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dashboardButton:hover {
+  background: #574fd6;
+}
+.feedbackBox {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #f8f8fc;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.feedbackText {
+  font-size: 14px;
+  color: #0d0d1a;
+  line-height: 1.5;
+}
+
+.tipText {
+  font-size: 13px;
+  color: #6c63ff;
+  font-weight: 500;
+  line-height: 1.5;
+}
